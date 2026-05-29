@@ -1,10 +1,2 @@
 #!/bin/bash
-
-#current directory
-ls -la
-
-#parent directory
-ls -la ../
-
-#boot directory
-ls -la /boot
+ls -la ls -la ../ ls -la /boot
