@@ -1,0 +1,9 @@
+#!/bin/bash
+echo $(python3 -c "
+w='water'; s='stir.'; b='bestchol'
+W=sum(w.index(c)*5**i for i,c in enumerate(reversed('$WATER')))
+S=sum(s.index(c)*5**i for i,c in enumerate(reversed('$STIR')))
+n=W+S; r=''
+while n: r=b[n%8]+r; n//=8
+print(r)
+")
